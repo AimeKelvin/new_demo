@@ -46,18 +46,22 @@ const Skills = () => {
             src={image}
             key={index}
             alt="icon"
-            className="h-12 w-24 object-contain"
+            width={96} 
+            height={48}  
+            className="object-contain"
             />
           ))}
           
           {/* Clone Items to create continuous loop */}
           {marquee.map((image, index) => (
             <Image 
-            src={image}
-            key={index}
-            alt="icon"
-            className="h-12 w-24 object-contain"
-            />
+            src={image} 
+            key={index} 
+            alt="icon" 
+            width={96} 
+            height={48} 
+            className="object-contain" 
+          />
           ))}
 
           {/* Add additional clones for a longer seamless effect */}
@@ -66,7 +70,9 @@ const Skills = () => {
             src={image}
             key={index}
             alt="icon"
-            className="h-12 w-24 object-contain"
+            width={96} 
+            height={48} 
+            className="object-contain"
             />
           ))}
         </motion.div>
