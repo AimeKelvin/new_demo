@@ -39,17 +39,19 @@ export default function About() {
             }`}
           >
             <p>
-              In 2018, I embarked on my journey into software development, initially honing my skills through <strong>Free Code Camp</strong> before delving into a software training bootcamp known as <strong>ATLP</strong>, facilitated by <strong>Andela Rwanda</strong>.
+            My journey into web development began with <strong>FreeCodeCamp</strong>, where I dove into coding on my own, tackling challenges and building projects that laid the foundation for my career. After gaining confidence, I took my skills further by joining <strong>SOS Technical High School</strong>, where I met two amazing classmates who shared my passion for technology. Together, we <strong>founded Chroste Labs</strong> — a space where we could collaborate on innovative projects and make our mark in the tech world.
             </p>
             <p>
-              Fast forward to today, I boast over 5 years of immersive experience as a Web & Mobile Engineer. Throughout my career, I've collaborated with various engineering firms, contributing my expertise to diverse projects. Checkout my experience section.
+            With <strrong>3 years of experience</strrong> in web development, I've had the opportunity to work on a wide range of projects, from simple websites to more complex, interactive applications.
+            </p>
+            <p> 
+              As Lead Developer at Chroste Labs, I focus on creating smooth, dynamic user experiences while staying on top of the latest trends in design and development.
+
             </p>
             <p>
-              Among my notable achievements is the creation of <strong>Sinc</strong>, an innovative event ticketing platform, in collaboration with my Co-Founders. Sinc has significantly transformed and enhanced the events industry landscape in Rwanda.
+            I'm always excited about the potential for technology to solve problems and enhance lives, and I’m constantly exploring new ways to improve my craft and push the boundaries of what we can create.
             </p>
-            <p>
-              Beyond coding, I am passionate about expanding my knowledge in Cyber Security. During my leisure time, you can find me indulging in pool table, socializing with friends, or immersing myself in the vibrant events scene, often facilitated by Sinc.
-            </p>
+           
           </div>
         
           {!expanded && (
