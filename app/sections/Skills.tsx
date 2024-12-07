@@ -2,6 +2,7 @@
 import Particles from "../components/Particles";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image"
 
 const Skills = () => {
   const marquee = [
@@ -41,31 +42,31 @@ const Skills = () => {
         >
           {/* Marquee Items */}
           {marquee.map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={`Icon ${index}`}
-              className="h-12 w-24 object-contain"
+            <Image 
+            src={image}
+            key={index}
+            alt="icon"
+            className="h-12 w-24 object-contain"
             />
           ))}
           
           {/* Clone Items to create continuous loop */}
           {marquee.map((image, index) => (
-            <img
-              key={`clone-${index}`}
-              src={image}
-              alt={`Icon clone ${index}`}
-              className="h-12 w-24 object-contain"
+            <Image 
+            src={image}
+            key={index}
+            alt="icon"
+            className="h-12 w-24 object-contain"
             />
           ))}
 
           {/* Add additional clones for a longer seamless effect */}
           {marquee.map((image, index) => (
-            <img
-              key={`clone-${index}`}
-              src={image}
-              alt={`Icon clone ${index}`}
-              className="h-12 w-24 object-contain"
+            <Image 
+            src={image}
+            key={index}
+            alt="icon"
+            className="h-12 w-24 object-contain"
             />
           ))}
         </motion.div>

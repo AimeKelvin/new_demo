@@ -5,7 +5,7 @@ import { useState } from "react";
 import Button from "../components/Button";
 
 export default function About() {
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState<boolean>(false); // Ensure the type is boolean
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center bg-transparent relative px-4 sm:px-6 lg:px-8">
@@ -38,18 +38,10 @@ export default function About() {
               expanded ? "max-h-[1000px]" : "max-h-[150px]"
             }`}
           >
-            <p>
-              My journey into web development began with <strong>FreeCodeCamp</strong>, where I dove into coding on my own, tackling challenges and building projects that laid the foundation for my career. After gaining confidence, I took my skills further by joining <strong>SOS Technical High School</strong>, where I met two amazing classmates who shared my passion for technology. Together, we <strong>founded Chroste Labs</strong> — a space where we could collaborate on innovative projects and make our mark in the tech world.
-            </p>
-            <p>
-              With <strong>3 years of experience</strong> in web development, I've had the opportunity to work on a wide range of projects, from simple websites to more complex, interactive applications.
-            </p>
-            <p> 
-              As Lead Developer at Chroste Labs, I focus on creating smooth, dynamic user experiences while staying on top of the latest trends in design and development.
-            </p>
-            <p>
-              I'm always excited about the potential for technology to solve problems and enhance lives, and I’m constantly exploring new ways to improve my craft and push the boundaries of what we can create.
-            </p>
+           <p>
+  My journey into web development began with <strong>FreeCodeCamp</strong>, where I dove into coding on my own, tackling challenges and building projects that laid the foundation for my career. After gaining confidence, I took my skills further by joining <strong>SOS Technical High School</strong>, where I met two amazing classmates who shared my passion for technology. Together, we <strong>founded Chroste Labs</strong> &mdash; a space where we could collaborate on innovative projects and make our mark in the tech world.
+</p>
+
           </div>
         
           {!expanded && (
