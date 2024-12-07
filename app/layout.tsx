@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Space_Grotesk } from "next/font/google"; // Import Space Grotesk font
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 
+// Load custom local fonts
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -12,6 +14,13 @@ const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
+});
+
+// Load Space Grotesk font from Google
+const spaceGrotesk = Space_Grotesk({
+  weight: ["400", "700"], // Choose the weights you need
+  subsets: ["latin"], // You can add more subsets if required
+  variable: "--font-space-grotesk",
 });
 
 export const metadata: Metadata = {
@@ -27,11 +36,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} antialiased`}
       >
         <ThemeProvider attribute="class" defaultTheme="system">
-      {children}
-    </ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

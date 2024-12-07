@@ -38,3 +38,35 @@ body {
   --background-dark: #121212;
   --text-dark: #f0f0f0;
 }
+
+.rotating-image {
+  display: inline-block; 
+  animation: spin 180s linear infinite; 
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); 
+  }
+  to {
+    transform: rotate(-360deg); 
+  }
+}
+
+.semi-rotating-image {
+  display: inline-block; 
+  animation: spinBackAndForth 6s ease-in-out infinite; 
+}
+
+@keyframes spinBackAndForth {
+  0% {
+    transform: rotate(0deg); 
+  }
+  50% {
+    transform: rotate(10deg); 
+  }
+  100% {
+    transform: rotate(0deg); 
+  }
+}
+
