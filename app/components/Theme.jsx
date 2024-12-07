@@ -1,4 +1,4 @@
-// app/components/ThemeSwitch.tsx
+
 'use client';
 
 import { FiSun, FiMoon } from 'react-icons/fi';
@@ -14,11 +14,11 @@ export default function ThemeSwitch() {
   }, []);
 
   if (!mounted) {
-    return <div>Loading...</div>; // Or a proper loader
+    return <div>...</div>; 
   }
 
   return (
-    <div>
+    <div className="p-4 absolute">
       {resolvedTheme === 'dark' ? (
         <FiSun
           onClick={() => setTheme('light')}
