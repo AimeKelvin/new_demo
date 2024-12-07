@@ -3,6 +3,7 @@ import Hero from './sections/Hero'
 import { Navbar } from "./components/Navbar"
 import Theme from "./components/Theme";
 import About from "./sections/About"
+import Skills from './sections/Skills'
 
 const links = [
   { label: "Home", href: "#Home" },
@@ -19,6 +20,7 @@ export default function Home() {
     </Navbar>
    <Hero /> 
    <About />
+   <Skills />
     </>
   )
 }

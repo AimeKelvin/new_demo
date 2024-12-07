@@ -32,8 +32,14 @@ export const Navbar: React.FC<NavbarProps> = ({ links, logoHref = "/", children 
             : "bg-zinc-900/500 border-zinc-800"
         }`}
       >
-        <div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
-          <div className="flex justify-between gap-8">
+        <div className="container flex items-center justify-between p-6 mx-auto">
+          {/* Logo */}
+          <Link href={logoHref} className="duration-200 text-zinc-300 hover:text-zinc-100">
+            {/* Logo can go here */}
+          </Link>
+
+          {/* Navbar Links */}
+          <div className="flex flex-wrap justify-center sm:justify-start items-center space-x-6 w-full sm:w-auto">
             {links.map((link) => (
               <Link
                 key={link.href}
@@ -44,10 +50,6 @@ export const Navbar: React.FC<NavbarProps> = ({ links, logoHref = "/", children 
               </Link>
             ))}
           </div>
-
-          <Link href={logoHref} className="duration-200 text-zinc-300 hover:text-zinc-100">
-            {/* Logo can go here */}
-          </Link>
 
           {/* Render children inside the Navbar */}
           {children && <div className="ml-4">{children}</div>}
