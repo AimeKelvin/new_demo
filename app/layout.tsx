@@ -35,7 +35,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
        <head>
-       <link rel="icon" href="/favicon.ico" sizes="any" />
+       
+       <link rel="icon" type="image/svg+xml" href="https://img.icons8.com/?size=100&id=66756&format=png&color=ffffff" />
        </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} antialiased`}
