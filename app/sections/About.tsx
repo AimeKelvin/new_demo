@@ -42,7 +42,7 @@ export default function About() {
             My journey into web development began with <strong>FreeCodeCamp</strong>, where I dove into coding on my own, tackling challenges and building projects that laid the foundation for my career. After gaining confidence, I took my skills further by joining <strong>SOS Technical High School</strong>, where I met two amazing classmates who shared my passion for technology. Together, we <strong>founded Chroste Labs</strong> — a space where we could collaborate on innovative projects and make our mark in the tech world.
             </p>
             <p>
-            With <strrong>3 years of experience</strrong> in web development, I've had the opportunity to work on a wide range of projects, from simple websites to more complex, interactive applications.
+            With <strong>3 years of experience</strong> in web development, I've had the opportunity to work on a wide range of projects, from simple websites to more complex, interactive applications.
             </p>
             <p> 
               As Lead Developer at Chroste Labs, I focus on creating smooth, dynamic user experiences while staying on top of the latest trends in design and development.
